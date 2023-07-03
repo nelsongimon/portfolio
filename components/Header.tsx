@@ -7,7 +7,7 @@ export default function Header() {
       z-30
       w-full
     ">
-      Header
+
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { Sora } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import "./globals.css";
-import FrameMotionProvider from "@/providers/FrameMotionProvider";
+// import FrameMotionProvider from "@/providers/FrameMotionProvider";
 
 
 const sora = Sora({
@@ -30,9 +30,9 @@ export default function RootLayout({
             <Navbar />
             <Header />
             <TopLeftImage />
-            <FrameMotionProvider>
-              {children}
-            </FrameMotionProvider>
+            {/* <FrameMotionProvider> */}
+            {children}
+            {/* </FrameMotionProvider> */}
           </div>
         </LanguageProvider>
       </body>

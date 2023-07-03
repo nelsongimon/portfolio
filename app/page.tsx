@@ -1,4 +1,4 @@
-import ParticlesContainer from "@/components/ParticlesContainer";
+// import ParticlesContainer from "@/components/ParticlesContainer";
 import ProjectsBtn from "@/components/ProjectsBtn";
 import Avatar from "@/components/Avatar";
 // import { motion } from "framer-motion";
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
         <div>
           {/* particles */}
-          <ParticlesContainer />
+          {/* <ParticlesContainer /> */}
           <div className="
             w-full
             h-full
