@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={sora.className}>
         <LanguageProvider>
-          <div className="page bg-site text-white bg-cover bg-no-repeat relative">
+          <div className="page bg-indigo-950 text-white relative">
             <Navbar />
             <Header />
             <TopLeftImage />
