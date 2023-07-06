@@ -1,6 +1,7 @@
+import ProjectsContent from "./components/ProjectsContent";
 
-export default function Project() {
+export default function Projects() {
   return (
-    <div>Project Page</div>
+    <ProjectsContent />
   );
 }

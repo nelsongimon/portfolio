@@ -7,76 +7,155 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/varaints";
 import { useState } from "react";
 import { IconType } from "react-icons/lib";
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaWordpress } from "react-icons/fa";
-import { SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs } from "react-icons/si";
+import {
+  FaCss3,
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaWordpress,
+  FaLaravel
+} from "react-icons/fa";
+import {
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss
+} from "react-icons/si";
 import CountUp from "react-countup";
 
-const aboutData = [
+const aboutText = {
+  es: {
+    title_1: "Contando",
+    title_2: "Historias",
+    title_3: "a través de Diseños Impactantes",
+    description: "Soy un ingeniero de sistemas apasionado por el diseño gráfico y el desarrollo web. Mi enfoque principal se encuentra en el área del frontend, donde combino mi creatividad y habilidades técnicas para crear sitios web visualmente atractivos y de alto rendimiento.",
+    yearExpWeb: "AÑOS DE EXPERIENCIA EN DESARROLLO WEB",
+    yearExpDesign: "AÑOS DE EXPERIENCIA EN DISEÑO GRÁFICO"
+  },
+  en: {
+    title_1: "Telling",
+    title_2: "Stories",
+    title_3: "through Impactful Designs",
+    description: "I am a passionate systems engineer with a love for graphic design and web development. My main focus lies in frontend development, where I blend my creativity and technical skills to create visually appealing and high-performance websites.",
+    yearExpWeb: "YEARS OF EXPERIENCE IN WEB DEVELOPMENT",
+    yearExpDesign: "YEARS OF EXPERIENCE IN GRAPHIC DESIGN"
+  }
+}
+
+type AboutData = {
+  [index: string]: any
+}
+
+const aboutData: AboutData[] = [
   {
-    title: 'skills',
+    title: {
+      es: "Tecnologías Y Herramientas",
+      en: "Technologies and Tools"
+    },
     info: [
       {
-        title: 'Web Development',
+        title: {
+          es: "Desarrollo Web",
+          en: "Web Development"
+        },
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          FaHtml5,
+          FaCss3,
+          FaJs,
+          FaReact,
+          SiTypescript,
+          SiNextdotjs,
+          SiTailwindcss,
+          FaLaravel,
+          FaWordpress,
         ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: {
+          es: "Diseño Gráfico",
+          en: "Graphic Design"
+        },
+        icons: [
+          SiAdobeillustrator,
+          SiAdobephotoshop
+        ],
       },
     ],
   },
   {
-    title: 'awards',
+    title: {
+      es: "Experiencia Laboral",
+      en: "Work Experience"
+    },
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: {
+          es: "DISEÑADOR Y DESARROLLADOR WEB FREELANCE",
+          en: "FREELANCE WEB DESIGNER AND DEVELOPER"
+        },
+        stage: {
+          es: "AGOSTO 2021 -  ACTUALIDAD",
+          en: "AUGUST 2021 - PRESENT"
+        },
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: {
+          es: "DISEÑADOR GRÁFICO Y WEB",
+          en: "GRAPHIC AND WEB DESIGNER"
+        },
+        stage: {
+          es: "NÍTIDO - TIENDA PUBLICITARIA | ECUADOR (ENERO 2021 -  JULIO 2021)",
+          en: "NÍTIDO - TIENDA PUBLICITARIA | ECUADOR (JANUARY 2021 - JULY 2021)"
+        },
+      },
+      {
+        title: {
+          es: "DISEÑADOR GRÁFICO",
+          en: "GRAPHIC DESIGNER"
+        },
+        stage: {
+          es: "BOMAN SPORTS | ECUADOR (DICIEMBRE 2019 - OCTUBRE  2020)",
+          en: "BOMAN SPORTS | ECUADOR (DECEMBER 2019 - OCTOBER 2020)"
+        },
+      },
+      {
+        title: {
+          es: "DISEÑADOR GRÁFICO",
+          en: "GRAPHIC DESIGNER"
+        },
+        stage: {
+          es: "PUNTO DEL CELULAR IMPORTADORA | ECUADOR (FEBRERO 2019 - DICIEMBRE 2019)",
+          en: "PUNTO DEL CELULAR IMPORTADORA | ECUADOR (FEBRUARY 2019 - DECEMBER 2019)"
+        },
+      },
+      {
+        title: {
+          es: "DESARROLLADOR WEB Y DISEÑADOR GRÁFICO",
+          en: "WEB DEVELOPER AND GRAPHIC DESIGNER"
+        },
+        stage: {
+          es: "FLOPOLOGIA AGENCIA DIGITAL | VENEZUELA (FEBRERO 2017 - NOVIEMBRE 2018)",
+          en: "FLOPOLOGIA AGENCIA DIGITAL | VENEZUELA (FEBRUARY 2017 - NOVEMBER 2018)"
+        },
       },
     ],
   },
   {
-    title: 'experience',
+    title: {
+      es: "Formación Académica",
+      en: "Academic Education"
+    },
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
-      },
-      {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: {
+          es: "INGENIERÍA DE SISTEMAS",
+          en: "SYSTEMS ENGINEERING"
+        },
+        stage: {
+          es: "UNIVERSIDAD DE ORIENTE - VENEZUELA (2009 - 2015)",
+          en: "UNIVERSIDAD DE ORIENTE - VENEZUELA (2009 - 2015)",
+        },
       },
     ],
   },
@@ -86,9 +165,9 @@ export default function AboutContent() {
   const { language } = useLanguage();
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 text-center xl:text-left py-32">
+    <div className="h-full bg-primary/50 text-center xl:text-left py-40">
       <Circles />
-      <motion.div className="hidden xl:flex absolute bottom-0 -left-[370px]"
+      <motion.div className="hidden xl:flex absolute bottom-0 -left-[300px] z-40"
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -96,16 +175,16 @@ export default function AboutContent() {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
-          <motion.h2 className="h2"
+          <motion.h2 className="text-5xl font-bold leading-tight mb-6"
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
           >
-            Captivating <span className="text-accent">stories</span> birth magnificent designs.
+            {aboutText[language].title_1} <span className="text-accent">{aboutText[language].title_2}</span> {aboutText[language].title_3}
           </motion.h2>
           <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
             variants={fadeIn("right", 0.4)}
@@ -113,53 +192,40 @@ export default function AboutContent() {
             animate="show"
             exit="hidden"
           >
-            10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, counsulted for startups, and collaborate on digital products for business and consumer use.
+            {aboutText[language].description}
           </motion.p>
           {/* counters */}
-          <motion.div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+          <motion.div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 bg-indigo-800/10 p-4 rounded-md z-50"
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
           >
             <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
+              {/* we experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                <div className="text-2xl xl:text-5xl font-extrabold text-accent mb-2">
                   <CountUp
                     start={0}
-                    end={10}
+                    end={2}
                     duration={5}
                   /> +
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[200px]">
+                  {aboutText[language].yearExpWeb}
                 </div>
               </div>
-              {/* clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+              {/* design experience */}
+              <div className="flex-1">
+                <div className="text-2xl xl:text-5xl font-extrabold text-accent mb-2">
                   <CountUp
                     start={0}
-                    end={10}
+                    end={6}
                     duration={5}
                   /> +
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
-                </div>
-              </div>
-              {/* projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp
-                    start={0}
-                    end={10}
-                    duration={5}
-                  /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[200px]">
+                  {aboutText[language].yearExpDesign}
                 </div>
               </div>
             </div>
@@ -177,37 +243,37 @@ export default function AboutContent() {
               <div
                 key={itemIndex}
                 onClick={() => setIndex(itemIndex)}
-                className={`${index === itemIndex && `text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300`} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:absolute after:bg-white after:-bottom-1 after:left-0`}
+                className={`${index === itemIndex && `text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300`} cursor-pointer uppercase xl:text-lg font-semibold relative after:w-8 after:h-[2px] after:absolute after:bg-white after:-bottom-1 after:left-0`}
               >
-                {item.title}
+                {item.title[language]}
               </div>
             ))}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => (
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-7 items-center xl:items-start">
+            {aboutData[index].info.map((item: any, itemIndex: number) => (
               <div key={itemIndex} className="
                 flex-1
                 flex
                 flex-col
-                md:flex-row
                 max-w-max
-                gap-x-2
-                items-center
+                gap-y-1
+                items-start
                 text-white/60                
               ">
                 {/* title */}
-                <div className="font-extralight mb-2 mb-0">
-                  {item.title}
+                <div className="mb-0">
+                  <p className="text-md font-medium uppercase">
+                    {item?.title[language]}
+                  </p>
                 </div>
                 <div className="hidden md:flex">
-                  -
-                </div>
-                <div className="hidden md:flex">
-                  {item?.stage}
+                  <p className="text-xs font-light uppercase">
+                    {item?.stage?.[language]}
+                  </p>
                 </div>
                 <div className="flex gap-x-4">
                   {/* icons */}
-                  {item.icons?.map((icon: any, itemIndex: number) => (
+                  {item.icons?.map((Icon: IconType, itemIndex: number) => (
                     <div
                       key={itemIndex}
                       className="
@@ -217,7 +283,7 @@ export default function AboutContent() {
                         text-white
                       "
                     >
-                      {icon}
+                      <Icon />
                     </div>
                   ))}
                 </div>

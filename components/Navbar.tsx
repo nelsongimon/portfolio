@@ -91,7 +91,7 @@ export default function Navbar() {
         h-[80px]
         xl:h-max
         py-8
-        bg-white/10
+        bg-indigo-900/10
         backdrop-blur-sm
         text-3xl
         xl:text-xl

@@ -2,7 +2,7 @@
 
 import { createContext, useEffect, useState } from "react";
 
-type AvailableLanguages = "en" | "es";
+export type AvailableLanguages = "en" | "es";
 
 type LanguageContextType = {
   language: AvailableLanguages;

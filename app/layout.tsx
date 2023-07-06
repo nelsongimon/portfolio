@@ -30,9 +30,7 @@ export default function RootLayout({
             <Navbar />
             <Header />
             <TopLeftImage />
-            {/* <FrameMotionProvider> */}
             {children}
-            {/* </FrameMotionProvider> */}
           </div>
         </LanguageProvider>
       </body>

@@ -1,6 +1,7 @@
+import ContactContent from "./components/ContactContent";
 
 export default function Contact() {
   return (
-    <div>Contact Page</div>
+    <ContactContent />
   );
 }

@@ -1,8 +1,9 @@
 "use client";
 
+import SwichterLanguages from "./SwichterLanguages";
+import Socials from "@/components/Socials";
 import Image from "next/image";
 import Link from "next/link";
-import Socials from "@/components/Socials";
 
 export default function Header() {
   return (
@@ -26,18 +27,20 @@ export default function Header() {
           gap-y-6
           py-8
         ">
+          {/* socials */}
+          <Socials />
           {/* logo */}
           <Link href="/">
             <Image
               src="/images/logo.svg"
-              width={220}
-              height={48}
+              width={300}
+              height={100}
               alt="Logo"
               priority={true}
             />
           </Link>
-          {/* socials */}
-          <Socials />
+          {/* languages swicht */}
+          <SwichterLanguages />
         </div>
       </div>
     </header>

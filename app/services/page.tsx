@@ -1,6 +1,7 @@
+import ServicesContent from "./components/ServicesContent";
 
 export default function Services() {
   return (
-    <div>Services Page</div>
+    <ServicesContent />
   );
 }

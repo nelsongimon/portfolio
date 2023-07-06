@@ -10,9 +10,9 @@ export default function Avatar() {
       max-w-none
     ">
       <Image
-        src="/images/avatar.png"
-        width={737}
-        height={678}
+        src="/images/HeroBannerWeb.png"
+        width={569}
+        height={620}
         alt="Avatar image"
         className="
           translate-z-0
