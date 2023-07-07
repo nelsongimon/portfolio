@@ -6,13 +6,13 @@ export default function Avatar() {
   return (
     <div className="
       hidden
-      xl:flex
+      lg:flex
       max-w-none
     ">
       <Image
-        src="/images/HeroBannerWeb.png"
-        width={569}
-        height={620}
+        src="/images/nelsongimonf.png"
+        width={700}
+        height={700}
         alt="Avatar image"
         className="
           translate-z-0

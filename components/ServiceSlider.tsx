@@ -56,11 +56,11 @@ export default function ServiceSlider() {
         clickable: true
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[370px]"
+      className="h-[300px] lg:h-[420px] xl:h-[370px]"
     >
       {servicesData.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className=" h-[370px]  rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer  transition-all duration-300 relative bg-indigo-800/10 hover:bg-indigo-800/20">
+          <div className="h-[300px] lg:h-[420px] xl:h-[370px] rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer  transition-all duration-300 relative bg-indigo-800/10 hover:bg-indigo-800/20">
             {/* icon */}
             <div className="text-4xl text-accent mb-4">
               <item.icon />

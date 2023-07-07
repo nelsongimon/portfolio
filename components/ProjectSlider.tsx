@@ -9,7 +9,6 @@ import Image from "next/image";
 import { FaCss3, FaHtml5, FaJs, FaReact, FaWordpress, FaEye, FaElementor } from "react-icons/fa";
 import { SiNextdotjs, SiTypescript, SiWoo, SiTailwindcss } from "react-icons/si";
 import useLanguage from "@/hooks/useLanguage";
-import { useRouter } from "next/navigation";
 
 const projectsText = {
   es: {
@@ -26,7 +25,7 @@ interface ProjectsData {
 
 const projectsData: ProjectsData[] = [
   {
-    name: "Panlatino.ca",
+    name: "Panlatino",
     url: "https://panlatino.ca/",
     image: "/images/panlatino.jpg",
     technologies: [
@@ -82,19 +81,12 @@ const projectsData: ProjectsData[] = [
 ];
 
 export default function ProjectSlider() {
-  const router = useRouter();
-
-  const handleClick = (url: string) => {
-    console.log("click");
-    router.push(url);
-  }
-
   const { language } = useLanguage();
   return (
     <Swiper
       breakpoints={{
         320: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 15
         },
         640: {
@@ -107,7 +99,7 @@ export default function ProjectSlider() {
         clickable: true
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[400px]"
+      className="h-[320px] sm:h-[400px]"
     >
       {projectsData.map((item, index) => (
         <SwiperSlide key={index}>
@@ -137,7 +129,6 @@ export default function ProjectSlider() {
               aspect-square
               rounded-lg
             "
-              onClick={() => handleClick(item.url)}
             >
               <div className="
                 bg-gradient-to-t

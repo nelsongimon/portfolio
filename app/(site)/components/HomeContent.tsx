@@ -24,23 +24,25 @@ export default function HomeContent() {
   const { language } = useLanguage();
   return (
     <div className="
-      bg-primary/50
       h-full
+      w-full
     ">
       {/* text */}
       <div className="w-full h-screen">
         <div className="
           text-center
+          lg:text-left
           flex
           flex-col
           justify-center
-          xl:pt-32
-          xl:text-left
+          pt-24
+          lg:pt-12
+          xl:pt-28
           h-full
           container
           mx-auto
         ">
-          <motion.h1 className="h1 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-7"
+          <motion.h1 className="h1 w-full lg:max-w-xl mx-auto lg:mx-0"
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
@@ -48,7 +50,7 @@ export default function HomeContent() {
           >
             {homeData[language].title_1} <span className="text-accent">{homeData[language].title_2}</span>
           </motion.h1>
-          <motion.p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-10"
+          <motion.p className="w-full lg:max-w-xl mx-auto lg:mx-0 mb-9 lg:mb-10"
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             animate="show"
@@ -57,7 +59,7 @@ export default function HomeContent() {
             {homeData[language].description}
           </motion.p>
           {/* button */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center lg:hidden relative">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -65,16 +67,16 @@ export default function HomeContent() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="hidden lg:flex"
           >
             <ProjectsBtn />
           </motion.div>
         </div>
       </div>
       {/* image */}
-      <div className="w-[1200px] h-screen absolute -right-10 bottom-0">
+      <div className="w-[1200px] h-screen absolute -right-[50px] bottom-0">
         {/* bg image */}
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute translate-z-0 mix-blend-color-dodge">
+        <div className="bg-none lg:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute -bottom-[0px] mix-blend-color-dodge">
         </div>
         <div>
           {/* particles */}
@@ -85,12 +87,13 @@ export default function HomeContent() {
             animate="show"
             exit="hidden"
             className="
-            max-w-[569px]
+            max-w-[650px]
             max-h-[620px]
             absolute
             bottom-0
             lg:bottom-0
-            lg:right-[20%]
+            lg:right-[2%]
+            xl:right-[20%]
           ">
             <Avatar />
           </motion.div>

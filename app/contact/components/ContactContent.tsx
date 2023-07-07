@@ -27,12 +27,16 @@ const contactData = {
 export default function ContactContent() {
   const { language } = useLanguage();
   return (
-    <div className="h-full bg-primary/50">
+    <div className="
+    h-full 
+    pt-[120px]
+    lg:pt-0
+    ">
       <div className="container mx-auto h-full py-32 text-center xl:text-left flex items-center justify-center">
         {/* text and form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
-          <motion.h2 className="text-4xl text-center mb-8 font-bold xl:mt-8"
+          <motion.h2 className="h2 text-center mb-8 font-bold xl:mt-8"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"

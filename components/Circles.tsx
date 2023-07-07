@@ -9,11 +9,12 @@ export default function Circles() {
       xl:w-[300px]
       absolute
       -right-16
-      -bottom-2
+      -bottom-[10px]
       mix-blend-color-dodge
       animate-pulse
       duration-75
-      z-10
+      hidden
+      lg:block
     ">
       <Image
         src="/images/circles.png"

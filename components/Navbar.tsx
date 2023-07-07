@@ -63,40 +63,40 @@ export default function Navbar() {
       flex
       flex-col
       items-center
-      xl:justify-center
+      lg:justify-center
       gap-y-4
       fixed
       bottom-0
       h-max
       mt-auto
-      xl:right-[2%]
+      lg:right-[2%]
       z-50
       top-0
       w-full
-      xl:w-16
-      xl:max-w-md
-      xl:h-screen
+      lg:w-16
+      lg:max-w-md
+      lg:h-screen
     ">
       <div className="
         flex
-        xl:flex-col
+        lg:flex-col
         w-full
         items-center
         justify-around
-        xl:justify-center
+        lg:justify-center
         gap-y-10
         px-4
         md:px-40
-        xl:px-0
+        lg:px-0
         h-[80px]
-        xl:h-max
+        lg:h-max
         py-8
-        bg-indigo-900/10
+        bg-indigo-900/20
         backdrop-blur-sm
         text-3xl
-        xl:text-xl
-        xl:rounded-full
-        xl:shadow-lg
+        lg:text-xl
+        lg:rounded-full
+        lg:shadow-lg
       ">
         {navbarData.map((link, index) => (
           <Link

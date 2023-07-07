@@ -24,7 +24,7 @@ module.exports = {
         accent: '#F13024',
       },
       backgroundImage: {
-        explosion: 'url("/images/bg-explosion.png")',
+        explosion: 'url("/images/bg-explosion-home.png")',
         circles: 'url("/images/bg-circles.png")',
         circleStar: 'url("/images/circle-star.svg")',
         site: 'url("/images/site-bg.svg")',

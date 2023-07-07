@@ -165,20 +165,17 @@ export default function AboutContent() {
   const { language } = useLanguage();
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/50 text-center xl:text-left py-40">
-      <Circles />
-      <motion.div className="hidden xl:flex absolute bottom-0 -left-[300px] z-40"
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-      >
-        <Avatar />
-      </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6">
+    <div className="
+     h-full
+     text-center 
+     lg:text-left 
+     pt-56
+     lg:pt-40
+    ">
+      <div className="container mx-auto h-full flex flex-col items-start lg:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
-          <motion.h2 className="text-5xl font-bold leading-tight mb-6"
+          <motion.h2 className="h2 z-20"
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
@@ -186,7 +183,7 @@ export default function AboutContent() {
           >
             {aboutText[language].title_1} <span className="text-accent">{aboutText[language].title_2}</span> {aboutText[language].title_3}
           </motion.h2>
-          <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 z-20"
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
@@ -232,7 +229,7 @@ export default function AboutContent() {
           </motion.div>
         </div>
         {/* info */}
-        <motion.div className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        <motion.div className="flex flex-col w-full lg:max-w-[48%] h-[480px] pb-64"
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
@@ -243,16 +240,15 @@ export default function AboutContent() {
               <div
                 key={itemIndex}
                 onClick={() => setIndex(itemIndex)}
-                className={`${index === itemIndex && `text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300`} cursor-pointer uppercase xl:text-lg font-semibold relative after:w-8 after:h-[2px] after:absolute after:bg-white after:-bottom-1 after:left-0`}
+                className={`${index === itemIndex && `text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300`} cursor-pointer uppercase xl:text-lg font-semibold relative after:w-8 after:h-[2px] after:absolute after:bg-white after:-bottom-1 after:left-0 text-left`}
               >
                 {item.title[language]}
               </div>
             ))}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-7 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-7 items-start xl:items-start">
             {aboutData[index].info.map((item: any, itemIndex: number) => (
               <div key={itemIndex} className="
-                flex-1
                 flex
                 flex-col
                 max-w-max
@@ -266,12 +262,12 @@ export default function AboutContent() {
                     {item?.title[language]}
                   </p>
                 </div>
-                <div className="hidden md:flex">
-                  <p className="text-xs font-light uppercase">
+                <div className="flex">
+                  <p className="text-xs font-light uppercase text-left">
                     {item?.stage?.[language]}
                   </p>
                 </div>
-                <div className="flex gap-x-4">
+                <div className="flex flex-wrap gap-4">
                   {/* icons */}
                   {item.icons?.map((Icon: IconType, itemIndex: number) => (
                     <div
@@ -292,6 +288,15 @@ export default function AboutContent() {
           </div>
         </motion.div>
       </div>
+      <Circles />
+      <motion.div className="hidden xl:flex absolute -bottom-[30px] -left-[360px] z-10"
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <Avatar />
+      </motion.div>
     </div>
   );
 }

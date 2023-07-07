@@ -22,13 +22,20 @@ const servicesContent = {
 export default function ServicesContent() {
   const { language } = useLanguage();
   return (
-    <div className="h-full bg-primary/50 py-36 flex items-center">
+    <div className="
+      h-full 
+      pt-[230px]
+      lg:pt-0
+      xl:pt-0
+      flex 
+      items-center
+    ">
       <Circles />
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+        <div className="flex flex-col lg:flex-row gap-x-8">
           {/* text */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
-            <motion.h2 className="text-5xl mb-4 font-bold capitalize xl:mt-8"
+          <div className="text-center flex lg:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+            <motion.h2 className="h2"
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
@@ -36,7 +43,7 @@ export default function ServicesContent() {
             >
               {servicesContent[language].title} <span className="text-accent">.</span>
             </motion.h2>
-            <motion.p className="mb-4 max-w-[400px] mx-auto xl:mx-0"
+            <motion.p className="mb-0 max-w-[400px] mx-auto xl:mx-0"
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
@@ -45,7 +52,7 @@ export default function ServicesContent() {
               {servicesContent[language].description}
             </motion.p>
           </div>
-          <motion.div className="w-full xl:max-w-[65%]"
+          <motion.div className="w-full lg:max-w-[65%] pb-[90px]"
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
