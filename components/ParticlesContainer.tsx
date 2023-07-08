@@ -15,7 +15,7 @@ export default function ParticlesContainer() {
   }, [])
   return (
     <Particles
-      className="w-full h-full absolute translate-z-0"
+      className="w-full h-full absolute inset-0 translate-z-0"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

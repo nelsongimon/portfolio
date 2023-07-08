@@ -23,12 +23,8 @@ export default function ProjectsContent() {
   return (
     <div className="
       h-full 
-      pt-[220px]
       pb-[200px]
-      lg:pt-[150px]
-      xl:pt-[200px]
       flex 
-      items-start
     ">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-8">

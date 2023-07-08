@@ -56,7 +56,7 @@ export default function ServiceSlider() {
         clickable: true
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[300px] lg:h-[420px] xl:h-[370px]"
+      className="h-[340px] lg:h-[420px] xl:h-[370px]"
     >
       {servicesData.map((item, index) => (
         <SwiperSlide key={index}>

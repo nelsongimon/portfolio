@@ -29,14 +29,12 @@ export default function ContactContent() {
   return (
     <div className="
     h-full 
-    pt-[120px]
-    lg:pt-0
     ">
-      <div className="container mx-auto h-full py-32 text-center xl:text-left flex items-center justify-center">
+      <div className="container mx-auto h-full text-center xl:text-left flex justify-center">
         {/* text and form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
-          <motion.h2 className="h2 text-center mb-8 font-bold xl:mt-8"
+          <motion.h2 className="h2 text-center mb-8"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
@@ -45,14 +43,14 @@ export default function ContactContent() {
             {contactData[language].title}
           </motion.h2>
           {/* form */}
-          <motion.form className="flex-1 flex flex-col gap-6 w-full mx-auto"
+          <motion.form className="flex-1 flex flex-col gap-6 w-full mx-auto pb-[150px]"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="show"
           >
             {/* input group */}
-            <div className="flex gap-x-6 w-full">
+            <div className="flex flex-col lg:flex-row gap-6 w-full">
               <input type="text" placeholder={contactData[language].name} className="input" />
               <input type="text" placeholder={contactData[language].email} className="input" />
             </div>

@@ -68,10 +68,8 @@ export default function Navbar() {
       fixed
       bottom-0
       h-max
-      mt-auto
-      lg:right-[2%]
+      lg:right-[15px]
       z-50
-      top-0
       w-full
       lg:w-16
       lg:max-w-md

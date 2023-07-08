@@ -99,7 +99,7 @@ export default function ProjectSlider() {
         clickable: true
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[320px] sm:h-[400px]"
+      className="h-[280px] sm:h-[400px]"
     >
       {projectsData.map((item, index) => (
         <SwiperSlide key={index}>

@@ -9,6 +9,7 @@ export default function Header() {
   return (
     <header className="
       absolute
+      top-0
       z-30
       w-full
       flex

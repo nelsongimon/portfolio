@@ -23,21 +23,14 @@ const homeData = {
 export default function HomeContent() {
   const { language } = useLanguage();
   return (
-    <div className="
-      h-full
-      w-full
-    ">
+    <>
       {/* text */}
-      <div className="w-full h-screen">
+      <div className="w-full h-full">
         <div className="
           text-center
           lg:text-left
           flex
           flex-col
-          justify-center
-          pt-24
-          lg:pt-12
-          xl:pt-28
           h-full
           container
           mx-auto
@@ -74,7 +67,7 @@ export default function HomeContent() {
         </div>
       </div>
       {/* image */}
-      <div className="w-[1200px] h-screen absolute -right-[50px] bottom-0">
+      <div className="w-full h-full absolute right-0 bottom-0">
         {/* bg image */}
         <div className="bg-none lg:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute -bottom-[0px] mix-blend-color-dodge">
         </div>
@@ -93,12 +86,12 @@ export default function HomeContent() {
             bottom-0
             lg:bottom-0
             lg:right-[2%]
-            xl:right-[20%]
+            xl:right-[13%]
           ">
             <Avatar />
           </motion.div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

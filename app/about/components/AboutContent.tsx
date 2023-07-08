@@ -168,9 +168,7 @@ export default function AboutContent() {
     <div className="
      h-full
      text-center 
-     lg:text-left 
-     pt-56
-     lg:pt-40
+     lg:text-left  
     ">
       <div className="container mx-auto h-full flex flex-col items-start lg:flex-row gap-x-6">
         {/* text */}
@@ -229,7 +227,7 @@ export default function AboutContent() {
           </motion.div>
         </div>
         {/* info */}
-        <motion.div className="flex flex-col w-full lg:max-w-[48%] h-[480px] pb-64"
+        <motion.div className="flex flex-col w-full lg:max-w-[55%] xl:max-w-[48%] h-[480px] pt-4 lg:pt-0"
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
@@ -240,13 +238,13 @@ export default function AboutContent() {
               <div
                 key={itemIndex}
                 onClick={() => setIndex(itemIndex)}
-                className={`${index === itemIndex && `text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300`} cursor-pointer uppercase xl:text-lg font-semibold relative after:w-8 after:h-[2px] after:absolute after:bg-white after:-bottom-1 after:left-0 text-left`}
+                className={`${index === itemIndex && `text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300`} cursor-pointer uppercase text-sm xl:text-lg font-semibold relative after:w-8 after:h-[2px] after:absolute after:bg-white after:-bottom-1 after:left-0 text-left`}
               >
                 {item.title[language]}
               </div>
             ))}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-7 items-start xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-5 xl:gap-y-7 pb-[100px]">
             {aboutData[index].info.map((item: any, itemIndex: number) => (
               <div key={itemIndex} className="
                 flex
@@ -258,7 +256,7 @@ export default function AboutContent() {
               ">
                 {/* title */}
                 <div className="mb-0">
-                  <p className="text-md font-medium uppercase">
+                  <p className="text-sm lg:text-md font-medium uppercase text-left">
                     {item?.title[language]}
                   </p>
                 </div>
@@ -289,7 +287,7 @@ export default function AboutContent() {
         </motion.div>
       </div>
       <Circles />
-      <motion.div className="hidden xl:flex absolute -bottom-[30px] -left-[360px] z-10"
+      <motion.div className="hidden xl:flex absolute -bottom-[30px] -left-[340px] z-10 h-[650px] w-[650px]"
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"

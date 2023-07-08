@@ -24,11 +24,7 @@ export default function ServicesContent() {
   return (
     <div className="
       h-full 
-      pt-[230px]
-      lg:pt-0
-      xl:pt-0
       flex 
-      items-center
     ">
       <Circles />
       <div className="container mx-auto">
@@ -52,7 +48,7 @@ export default function ServicesContent() {
               {servicesContent[language].description}
             </motion.p>
           </div>
-          <motion.div className="w-full lg:max-w-[65%] pb-[90px]"
+          <motion.div className="w-full lg:max-w-[65%] pb-[150px] pt-6 lg:pt-0"
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
