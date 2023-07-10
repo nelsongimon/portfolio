@@ -9,7 +9,7 @@ export default function Circles() {
       xl:w-[300px]
       absolute
       -right-16
-      -bottom-[10px]
+      -bottom-[30px]
       mix-blend-color-dodge
       animate-pulse
       duration-75

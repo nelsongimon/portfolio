@@ -16,7 +16,7 @@ const homeData = {
   en: {
     title_1: "Nice to meet you,",
     title_2: "I'm Nelson Gimón",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eveniet ad similique mollitia necessitatibus doloribus officiis perspiciatis ipsa distinctio, nostrum possimus quod ullam, expedita corrupti repellendus error quo pariatur a!"
+    description: "As a professional, I have worked on projects in the areas of graphic design and web development, which has allowed me to acquire analytical and creative skills."
   }
 }
 
@@ -31,6 +31,7 @@ export default function HomeContent() {
           lg:text-left
           flex
           flex-col
+          lg:justify-center
           h-full
           container
           mx-auto
@@ -80,8 +81,8 @@ export default function HomeContent() {
             animate="show"
             exit="hidden"
             className="
-            max-w-[650px]
-            max-h-[620px]
+            max-w-[560px]
+            max-h-[560px]
             absolute
             bottom-0
             lg:bottom-0

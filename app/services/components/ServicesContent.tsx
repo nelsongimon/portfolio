@@ -25,8 +25,8 @@ export default function ServicesContent() {
     <div className="
       h-full 
       flex 
+      lg:items-center
     ">
-      <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-8">
           {/* text */}
@@ -37,7 +37,7 @@ export default function ServicesContent() {
               animate="show"
               exit="hidden"
             >
-              {servicesContent[language].title} <span className="text-accent">.</span>
+              {servicesContent[language].title}
             </motion.h2>
             <motion.p className="mb-0 max-w-[400px] mx-auto xl:mx-0"
               variants={fadeIn("up", 0.4)}
@@ -48,7 +48,7 @@ export default function ServicesContent() {
               {servicesContent[language].description}
             </motion.p>
           </div>
-          <motion.div className="w-full lg:max-w-[65%] pb-[150px] pt-6 lg:pt-0"
+          <motion.div className="w-full lg:max-w-[65%] pb-[150px] lg:pb-0 pt-6 lg:pt-0"
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
@@ -60,6 +60,7 @@ export default function ServicesContent() {
         </div>
       </div>
       <Bulb />
+      <Circles />
     </div>
   );
 }

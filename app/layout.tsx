@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={sora.className}>
         <LanguageProvider>
           <div className="page text-white relative">
-            <div className="h-full pt-[200px] lg:pt-[150px]">
+            <div className="h-full pt-[200px] lg:pt-[90px]">
               <Navbar />
               <Header />
               <TopLeftImage />

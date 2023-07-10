@@ -30,11 +30,11 @@ export default function ContactContent() {
     <div className="
     h-full 
     ">
-      <div className="container mx-auto h-full text-center xl:text-left flex justify-center">
+      <div className="container mx-auto h-full text-center xl:text-left flex justify-center lg:items-center">
         {/* text and form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
-          <motion.h2 className="h2 text-center mb-8"
+          <motion.h2 className="h2 text-[30px] text-center mb-8"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
@@ -43,7 +43,7 @@ export default function ContactContent() {
             {contactData[language].title}
           </motion.h2>
           {/* form */}
-          <motion.form className="flex-1 flex flex-col gap-6 w-full mx-auto pb-[150px]"
+          <motion.form className="flex-1 flex flex-col gap-5 w-full mx-auto pb-[150px] lg:pb-0"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"

@@ -7,7 +7,6 @@ export default function Loading() {
     <div className="
       w-full 
       h-full
-      bg-primary/50 
       flex 
       items-center 
       justify-center

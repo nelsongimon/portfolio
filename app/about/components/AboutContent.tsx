@@ -29,7 +29,7 @@ const aboutText = {
     title_1: "Contando",
     title_2: "Historias",
     title_3: "a través de Diseños Impactantes",
-    description: "Soy un ingeniero de sistemas apasionado por el diseño gráfico y el desarrollo web. Mi enfoque principal se encuentra en el área del frontend, donde combino mi creatividad y habilidades técnicas para crear sitios web visualmente atractivos y de alto rendimiento.",
+    description: "Mi enfoque principal se encuentra en el área del frontend, donde combino mi creatividad y habilidades técnicas para crear sitios web visualmente atractivos y de alto rendimiento.",
     yearExpWeb: "AÑOS DE EXPERIENCIA EN DESARROLLO WEB",
     yearExpDesign: "AÑOS DE EXPERIENCIA EN DISEÑO GRÁFICO"
   },
@@ -37,7 +37,7 @@ const aboutText = {
     title_1: "Telling",
     title_2: "Stories",
     title_3: "through Impactful Designs",
-    description: "I am a passionate systems engineer with a love for graphic design and web development. My main focus lies in frontend development, where I blend my creativity and technical skills to create visually appealing and high-performance websites.",
+    description: "My main focus lies in the frontend area, where I combine my creativity and technical skills to create visually appealing and high-performance websites.",
     yearExpWeb: "YEARS OF EXPERIENCE IN WEB DEVELOPMENT",
     yearExpDesign: "YEARS OF EXPERIENCE IN GRAPHIC DESIGN"
   }
@@ -170,7 +170,7 @@ export default function AboutContent() {
      text-center 
      lg:text-left  
     ">
-      <div className="container mx-auto h-full flex flex-col items-start lg:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col lg:flex-row lg:items-center gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 className="h2 z-20"
@@ -181,7 +181,7 @@ export default function AboutContent() {
           >
             {aboutText[language].title_1} <span className="text-accent">{aboutText[language].title_2}</span> {aboutText[language].title_3}
           </motion.h2>
-          <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 z-20"
+          <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-10 px-2 xl:px-0 z-20"
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
@@ -227,7 +227,7 @@ export default function AboutContent() {
           </motion.div>
         </div>
         {/* info */}
-        <motion.div className="flex flex-col w-full lg:max-w-[55%] xl:max-w-[48%] h-[480px] pt-4 lg:pt-0"
+        <motion.div className="flex flex-col w-full lg:max-w-[55%] xl:max-w-[48%] h-[420px] pt-4 lg:pt-0"
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
@@ -244,13 +244,14 @@ export default function AboutContent() {
               </div>
             ))}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-5 xl:gap-y-7 pb-[100px]">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-5 xl:gap-y-7 pb-[100px] lg:pb-0">
             {aboutData[index].info.map((item: any, itemIndex: number) => (
               <div key={itemIndex} className="
                 flex
                 flex-col
                 max-w-max
                 gap-y-1
+                lg:gap-y-0
                 items-start
                 text-white/60                
               ">
@@ -287,7 +288,8 @@ export default function AboutContent() {
         </motion.div>
       </div>
       <Circles />
-      <motion.div className="hidden xl:flex absolute -bottom-[30px] -left-[340px] z-10 h-[650px] w-[650px]"
+      {/* avatar */}
+      <motion.div className="hidden xl:flex absolute -bottom-[30px] -left-[290px] z-10 h-[550px] w-[550px]"
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
