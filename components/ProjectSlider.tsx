@@ -25,19 +25,21 @@ interface ProjectsData {
 
 const projectsData: ProjectsData[] = [
   {
-    name: "Panlatino",
-    url: "https://panlatino.ca/",
-    image: "/images/panlatino.jpg",
+    name: "Airbnb Clone",
+    url: "https://test-rent-clone.vercel.app/",
+    image: "/images/airbnb.jpg",
     technologies: [
-      FaWordpress,
-      FaElementor,
-      SiWoo
+      FaHtml5,
+      SiTailwindcss,
+      SiTypescript,
+      FaReact,
+      SiNextdotjs,
     ]
   },
   {
     name: "Iservicesint",
     url: "https://iservicesint.com/",
-    image: "/images/iis.jpg",
+    image: "/images/iis-ca.jpg",
     technologies: [
       FaWordpress,
       FaElementor,
@@ -46,8 +48,8 @@ const projectsData: ProjectsData[] = [
   },
   {
     name: "Spotify Clone",
-    url: "https://iservicesint.com/",
-    image: "/images/spotify.jpg",
+    url: "https://spotify-clone-blush-pi.vercel.app/",
+    image: "/images/spotify-clone.jpg",
     technologies: [
       FaHtml5,
       SiTailwindcss,
@@ -59,7 +61,41 @@ const projectsData: ProjectsData[] = [
   {
     name: "Messenger Clone",
     url: "https://iservicesint.com/",
-    image: "/images/messenger.jpg",
+    image: "/images/messenger-clone.jpg",
+    technologies: [
+      FaHtml5,
+      SiTailwindcss,
+      SiTypescript,
+      FaReact,
+      SiNextdotjs,
+    ]
+  },
+  {
+    name: "Panlatino",
+    url: "https://panlatino.ca/",
+    image: "/images/panlatino-ca.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+      SiWoo
+    ]
+  },
+  {
+    name: "Netflix Clone",
+    url: "https://movie-watch-seven.vercel.app/",
+    image: "/images/netflix-clone.jpg",
+    technologies: [
+      FaHtml5,
+      SiTailwindcss,
+      SiTypescript,
+      FaReact,
+      SiNextdotjs,
+    ]
+  },
+  {
+    name: "Twitter Clone",
+    url: "https://threads-vert.vercel.app/",
+    image: "/images/twitter.jpg",
     technologies: [
       FaHtml5,
       SiTailwindcss,
@@ -71,7 +107,17 @@ const projectsData: ProjectsData[] = [
   {
     name: "Calzado América",
     url: "https://iservicesint.com/",
-    image: "/images/calzadoamerica.jpg",
+    image: "/images/calzado-america.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+      SiWoo
+    ]
+  },
+  {
+    name: "Agrofomento",
+    url: "https://agrofomentoecuador.com/",
+    image: "/images/agrofomento.jpg",
     technologies: [
       FaWordpress,
       FaElementor,

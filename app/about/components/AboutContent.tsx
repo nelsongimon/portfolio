@@ -244,14 +244,14 @@ export default function AboutContent() {
               </div>
             ))}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-5 xl:gap-y-7 pb-[100px] lg:pb-0">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-5 xl:gap-y-6 pb-[100px] lg:pb-0">
             {aboutData[index].info.map((item: any, itemIndex: number) => (
               <div key={itemIndex} className="
                 flex
                 flex-col
                 max-w-max
                 gap-y-1
-                lg:gap-y-0
+                lg:gap-y-1
                 items-start
                 text-white/60                
               ">
