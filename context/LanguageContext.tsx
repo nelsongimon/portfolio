@@ -18,15 +18,20 @@ export default function LanguageProvider({
   children
 }: { children: React.ReactNode }) {
 
-  const storedLanguage = "es";
-  // const storedLanguage = typeof window !== "undefined" ? localStorage.getItem("language") : "en";
-  const [language, setLanguage] = useState<AvailableLanguages>(storedLanguage as AvailableLanguages);
+  // const storedLanguage = localStorage.getItem("language") || "es";
+  // const [language, setLanguage] = useState<AvailableLanguages>(storedLanguage as AvailableLanguages);
+  const [language, setLanguage] = useState<AvailableLanguages>(() => {
+    if (typeof window !== undefined && localStorage.getItem("language")) {
+      return localStorage.getItem("language") as AvailableLanguages;
+    }
+    return "es";
+  });
   const changeLanguage = (language: AvailableLanguages) => {
     setLanguage(language);
   }
 
   useEffect(() => {
-    // localStorage.setItem("language", language);
+    localStorage.setItem("language", language);
   }, [language]);
 
   const data: LanguageContextType = {

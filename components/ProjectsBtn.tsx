@@ -17,14 +17,15 @@ export default function ProjectsBtn() {
           justify-center
           items-center
           bg-circleStar
-          bg-cover
+          bg-contain
           bg-no-repeat
           group
+          z-50
         ">
         <Image
           src="/images/rounded-text.png"
           width={141}
-          height={148}
+          height={141}
           alt=""
           className="animate-spin-slow w-full h-full max-w-[141px] max-h-[148px]"
         />

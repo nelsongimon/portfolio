@@ -23,7 +23,7 @@ export const navbarData = [
   {
     label: {
       es: "Sobre mi",
-      en: "About"
+      en: "About me"
     },
     path: "/about",
     icon: <HiUser />

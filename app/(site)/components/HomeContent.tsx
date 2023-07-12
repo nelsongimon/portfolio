@@ -11,12 +11,12 @@ const homeData = {
   es: {
     title_1: "Un gusto conocerte,",
     title_2: "Soy Nelson Gimón",
-    description: "Como profesional, he trabajado en proyectos en las áreas de diseño gráfico y desarrollo web, lo cual me ha permitido adquirir habilidades analíticas y creativas."
+    description: "Soy un ingeniero de sistemas apasionado por el diseño gráfico y el desarrollo web. A lo largo de mi carrera, he trabajado en proyectos en estas áreas, lo que me ha permitido combinar mis habilidades analíticas y creativas para crear soluciones efectivas."
   },
   en: {
     title_1: "Nice to meet you,",
     title_2: "I'm Nelson Gimón",
-    description: "As a professional, I have worked on projects in the areas of graphic design and web development, which has allowed me to acquire analytical and creative skills."
+    description: "I am a systems engineer passionate about graphic design and web development. Throughout my career, I have worked on projects in these areas, which has allowed me to combine my analytical and creative skills to create effective solutions."
   }
 }
 
