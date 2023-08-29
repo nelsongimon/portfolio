@@ -71,6 +71,30 @@ const projectsData: ProjectsData[] = [
     ]
   },
   {
+    name: "Ecommerce Admin",
+    url: "https://ecommerce-admin-xi-three.vercel.app/",
+    image: "/images/ecommerce-admin.png",
+    technologies: [
+      FaHtml5,
+      SiTailwindcss,
+      SiTypescript,
+      FaReact,
+      SiNextdotjs,
+    ]
+  },
+  {
+    name: "Ecommerce Store",
+    url: "https://ecommerce-store-delta-virid.vercel.app/",
+    image: "/images/ecommerce-store.jpg",
+    technologies: [
+      FaHtml5,
+      SiTailwindcss,
+      SiTypescript,
+      FaReact,
+      SiNextdotjs,
+    ]
+  },
+  {
     name: "Panlatino",
     url: "https://panlatino.ca/",
     image: "/images/panlatino-ca.jpg",
