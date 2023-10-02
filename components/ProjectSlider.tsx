@@ -60,7 +60,7 @@ const projectsData: ProjectsData[] = [
   },
   {
     name: "Messenger Clone",
-    url: "https://iservicesint.com/",
+    url: "https://messenger-clone-one-delta.vercel.app/",
     image: "/images/messenger-clone.jpg",
     technologies: [
       FaHtml5,
@@ -102,6 +102,15 @@ const projectsData: ProjectsData[] = [
       FaWordpress,
       FaElementor,
       SiWoo
+    ]
+  },
+  {
+    name: "Ambafiber",
+    url: "https://ambafiber.net/",
+    image: "/images/ambafiber.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
     ]
   },
   {

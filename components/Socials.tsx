@@ -6,6 +6,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin
 } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Socials() {
   return (
@@ -22,7 +23,7 @@ export default function Socials() {
         <AiFillLinkedin />
       </Link>
       <Link href="https://twitter.com/nelsongimonf" target="_blank" className="hover:text-accent transition-all duration-300">
-        <AiFillTwitterCircle />
+        <FaXTwitter />
       </Link>
     </div>
   );

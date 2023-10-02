@@ -20,7 +20,8 @@ import {
   SiAdobeillustrator,
   SiNextdotjs,
   SiTypescript,
-  SiTailwindcss
+  SiTailwindcss,
+  SiFigma
 } from "react-icons/si";
 import CountUp from "react-countup";
 
@@ -78,7 +79,8 @@ const aboutData: AboutData[] = [
         },
         icons: [
           SiAdobeillustrator,
-          SiAdobephotoshop
+          SiAdobephotoshop,
+          SiFigma
         ],
       },
     ],
