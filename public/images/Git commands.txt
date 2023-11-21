@@ -1,0 +1,122 @@
+https://www.youtube.com/watch?v=3GymExBkKjE
+21:39
+
+
+Learn about github actions
+
+git init
+git status
+git status -s
+git add = la mejor practica es indicar los archivos sin usar .
+---
+
+git add filename
+git add . 
+git add filename --patch
+git add --all
+
+---
+git commit -m "message"
+git diff = permite ver los cambios entre archivos + lo que se agrego - lo que se elimino
+git diff --staged 
+git log = permite ver el historial de commits
+git log --oneline = vista mas resumida del git log  | to leave you need to press q
+git branch (para verificar en que rama estamos)
+git checkout -b nombre de la rama | (algunas empresas usan los numeros de los tickes, mientras otras usan la nomenclatura de features/name)
+git checkout nombrerama --- sirva para cambiarse de rama
+
+git merge nombrerama --- es importante estar en la raman principal
+
+git push -u origin main
+git push -u origin nombrerama
+
+git restore --staged
+
+-------------------
+
+git tiene diferentes etapas: 
+computer
+stage
+commit 
+server
+
+
+otras terminologias
+branch = rama
+merge = integracion con la rama principal
+pull request = propuesta de cambio o contribucion
+
+------------------------------
+
+Daily Meeting (you say what you did yesterday and what you are going to do today)
+
+-Tickets (fix bugs, Adding new features)
+-Make a pull request (look at this code and do you aprove this?)
+-Merge with the main branch
+
+
+
+Commits can have the tickets name
+
+
+---------------------------------
+
+STEPS: 
+
+
+Una vez que hayas terminado de trabajar en tu rama y estés listo para agregar tus cambios al proyecto, debes fusionar tu rama con la rama principal. Para hacerlo, sigue estos pasos:
+
+Cambia a la rama principal usando el comando git checkout:
+- git checkout main
+
+Actualiza la rama principal con los cambios más recientes desde el repositorio remoto usando el comando git pull:
+- git pull
+
+Fusiona tu rama con la rama principal usando el comando git merge:
+- git merge mi-rama
+
+***Resuelve cualquier conflicto que pueda haber surgido durante la fusión. Si hay conflictos, Git te indicará en qué archivos se encuentran y tendrás que editar manualmente los archivos para solucionarlos.
+
+Una vez que hayas resuelto los conflictos, haz una confirmación de la fusión usando el comando git commit:
+- git commit -m "Merge mi-rama con main"
+
+Finalmente, publica tus cambios en el repositorio remoto usando el comando git push:
+- git push
+
+**Estos pasos te permitirán agregar tus cambios al proyecto principal de Git y mantener su historial organizado. Después de fusionar tu rama, puedes eliminarla usando el comando:
+- git branch -d mi-rama
+
+
+----
+
+PULL REQUEST
+
+Para hacer una solicitud de extracción o pull request, sigue estos pasos:
+
+Para hacer una solicitud de extracción o pull request, sigue estos pasos:
+
+1. Asegúrate de tener una rama con tus cambios y que tu rama esté actualizada con la rama principal. Puedes hacer esto usando los comandos `git checkout` y `git pull`.
+
+2. Navega a la página del repositorio en GitHub y asegúrate de que estás en la rama que contiene tus cambios.
+
+3. Haz clic en el botón "New pull request" o "Crear solicitud de extracción".
+
+4. Selecciona la rama principal como destino de la solicitud de extracción.
+
+5. Agrega un título y una descripción a la solicitud de extracción para que los revisores entiendan lo que has cambiado y por qué.
+
+6. Si tienes una plantilla de solicitud de extracción en el repositorio, asegúrate de completarla.
+
+7. Haz clic en "Create pull request" o "Crear solicitud de extracción".
+
+8. Espera a que los revisores revisen tus cambios y hagan comentarios.
+
+9. Si se necesitan cambios adicionales, haz esos cambios en tu rama y realiza otra confirmación (`commit`).
+
+10. Una vez que se aprueben tus cambios, la rama principal se actualizará automáticamente con los cambios que has realizado.
+
+
+
+
+
+

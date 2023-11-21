@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { FaCss3, FaHtml5, FaJs, FaReact, FaWordpress, FaEye, FaElementor } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaReact, FaWordpress, FaEye, FaElementor, FaLaravel } from "react-icons/fa";
 import { SiNextdotjs, SiTypescript, SiWoo, SiTailwindcss } from "react-icons/si";
 import useLanguage from "@/hooks/useLanguage";
 
@@ -24,6 +24,30 @@ interface ProjectsData {
 }
 
 const projectsData: ProjectsData[] = [
+  {
+    name: "Nomada Vzla",
+    url: "https://www.nomadavzla.com/",
+    image: "/images/nomadavzla.jpg",
+    technologies: [
+      FaHtml5,
+      SiTailwindcss,
+      SiTypescript,
+      FaReact,
+      SiNextdotjs,
+    ]
+  },
+  {
+    name: "Nomada Vzla Admin",
+    url: "https://nomadavzla.store/",
+    image: "/images/nomadaadmin.jpg",
+    technologies: [
+      FaHtml5,
+      SiTailwindcss,
+      SiTypescript,
+      FaReact,
+      FaLaravel,
+    ]
+  },
   {
     name: "Airbnb Clone",
     url: "https://test-rent-clone.vercel.app/",
@@ -114,6 +138,15 @@ const projectsData: ProjectsData[] = [
     ]
   },
   {
+    name: "Fiber Store",
+    url: "https://fiberstore.net.ec/",
+    image: "/images/fiberstore.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+    ]
+  },
+  {
     name: "Netflix Clone",
     url: "https://movie-watch-seven.vercel.app/",
     image: "/images/netflix-clone.jpg",
@@ -183,8 +216,8 @@ export default function ProjectSlider() {
       {projectsData.map((item, index) => (
         <SwiperSlide key={index}>
           <div className="
-            bg-indigo-800/20
-            hover:bg-indigo-800/40
+            bg-indigo-800/50
+            hover:bg-indigo-900/60
             relative
             flex
             flex-col
@@ -206,17 +239,19 @@ export default function ProjectSlider() {
               w-full
               h-full
               aspect-square
-              rounded-lg
+              rounded-md
+              inset-0
             "
             >
               <div className="
                 bg-gradient-to-t
                 from-black
                 to-black/25
-                inset-0
+                w-full
+                h-full
                 absolute
                 z-10
-                opacity-90
+                opacity-50
               "></div>
               <div className="
                 bg-black/50
@@ -291,7 +326,7 @@ export default function ProjectSlider() {
               group-hover:translate-y-0
               text-white
               w-[120px]
-              hover:text-accent
+              hover:text-gray-300
             ">
               <FaEye className="text-4xl" />
               <a className="text-sm font-light underline underline-offset-4" href={item.url} target="_blank">

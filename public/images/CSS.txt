@@ -1,0 +1,38 @@
+Porfolio design:
+https://www.youtube.com/watch?v=sQoiM7i5Nqc	
+
+CSS Later
+https://www.youtube.com/watch?v=krfUjg0S2uI
+
+
+
+https://www.youtube.com/watch?v=00gyCtIQp8E
+1:04:41
+
+------
+
+https://www.youtube.com/watch?v=ft30zcMlFao
+3:05:21
+----curso tailwind
+
+https://www.youtube.com/@KevinPowell
+
+:root {
+	font-size: 62.5%
+}
+
+so 1.5rem = 15px
+
+tailwindcss breakpoints (all of values work with min-width)
+
+if you need to set the values for mobile devices, only need to put the value without device-size
+
+normal value
+md:  greater than 768px
+lg: greater than 1024px 
+xl: greater than 1280px 
+
+
+container you need to use with mx-auto
+
+
