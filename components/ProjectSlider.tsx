@@ -172,7 +172,7 @@ const projectsData: ProjectsData[] = [
   },
   {
     name: "Calzado América",
-    url: "https://iservicesint.com/",
+    url: "https://calzadoamerica.com.ec/",
     image: "/images/calzado-america.jpg",
     technologies: [
       FaWordpress,
