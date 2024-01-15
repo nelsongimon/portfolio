@@ -20,7 +20,7 @@ export const navbarData = [
       en: "Home"
     },
     path: "/",
-    icon: <HiHome />
+    icon: <HiHome className="text-xl" />
   },
   {
     label: {
@@ -28,7 +28,7 @@ export const navbarData = [
       en: "About me"
     },
     path: "/about",
-    icon: <HiUser />
+    icon: <HiUser className="text-xl" />
   },
   {
     label: {
@@ -36,7 +36,7 @@ export const navbarData = [
       en: "Services"
     },
     path: "/services",
-    icon: <HiRectangleGroup />
+    icon: <HiRectangleGroup className="text-xl" />
   },
   {
     label: {
@@ -44,7 +44,7 @@ export const navbarData = [
       en: "Graphic Design Projects"
     },
     path: "/graphic-design-projects",
-    icon: <MdDesignServices />
+    icon: <MdDesignServices className="text-xl" />
   },
   {
     label: {
@@ -52,7 +52,7 @@ export const navbarData = [
       en: "Web Projects"
     },
     path: "/web-projects",
-    icon: <MdWeb />
+    icon: <MdWeb className="text-xl" />
   },
   {
     label: {
@@ -60,7 +60,7 @@ export const navbarData = [
       en: "Contact"
     },
     path: "/contact",
-    icon: <HiEnvelope />,
+    icon: <HiEnvelope className="text-xl" />,
   },
 ]
 
@@ -90,15 +90,16 @@ export default function Navbar() {
         lg:flex-col
         w-full
         items-center
-        justify-around
+        justify-between
         lg:justify-center
         gap-y-10
         px-4
         md:px-40
         lg:px-0
-        h-[80px]
+        h-[35px]
         lg:h-max
-        py-8
+        py-6
+        lg:py-8
         bg-indigo-900/20
         backdrop-blur-sm
         text-3xl

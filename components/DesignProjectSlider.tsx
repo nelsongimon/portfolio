@@ -69,8 +69,8 @@ export default function DesignProjectSlider() {
             duration-300
             p-2
             shadow-xl
-            h-[165px]
-            w-[165px]
+            h-[160px]
+            w-[160px]
             lg:h-[370px]
             lg:w-[370px]
           ">
