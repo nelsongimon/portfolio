@@ -36,7 +36,7 @@ export default function HomeContent() {
           container
           mx-auto
         ">
-          <motion.h1 className="h1 w-full lg:max-w-xl mx-auto lg:mx-0"
+          <motion.h1 className="h1 w-full lg:max-w-xl mx-auto lg:mx-0 lg:mt-[-100px]"
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
@@ -53,7 +53,7 @@ export default function HomeContent() {
             {homeData[language].description}
           </motion.p>
           {/* button */}
-          <div className="flex justify-center lg:hidden relative">
+          {/* <div className="flex justify-center lg:hidden relative">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -64,7 +64,7 @@ export default function HomeContent() {
             className="hidden lg:flex"
           >
             <ProjectsBtn />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
       {/* image */}

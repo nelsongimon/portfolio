@@ -1,18 +1,18 @@
 "use client";
 
-import ProjectSlider from "@/components/ProjectSlider";
+import WebProjectSlider from "@/components/WebProjectSlider";
 import useLanguage from "@/hooks/useLanguage";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/varaints";
 
 const projectsData = {
   es: {
-    title: "Mis Proyectos",
+    title: "Proyectos Web",
     description_1: "He creado diversos proyectos en WordPress, desde sitios web corporativos hasta tiendas virtuales, donde me encargué de diseñar la línea gráfica y realizar la maquetación para lograr una experiencia visualmente atractiva y funcional.",
     description_2: "Además, he trabajado en proyectos personales utilizando tecnologías como React.js, Next.js y Tailwind CSS. Estos proyectos me han permitido practicar y demostrar mi habilidad en el desarrollo frontend, implementando soluciones interactivas y modernas."
   },
   en: {
-    title: "My Projects",
+    title: "Web Projects",
     description_1: "I have created various projects in WordPress, ranging from corporate websites to online stores, where I was responsible for designing the visual identity and carrying out the layout to achieve a visually appealing and functional experience.",
     description_2: "Furthermore, I have worked on personal projects using technologies such as React.js, Next.js, and Tailwind CSS. These projects have allowed me to practice and showcase my frontend development skills by implementing interactive and modern solutions."
   },
@@ -64,7 +64,7 @@ export default function ProjectsContent() {
             exit="hidden"
           >
             {/* slider */}
-            <ProjectSlider />
+            <WebProjectSlider />
           </motion.div>
         </div>
       </div>

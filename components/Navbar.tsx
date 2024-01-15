@@ -10,6 +10,8 @@ import {
   HiViewColumns,
   HiEnvelope
 } from "react-icons/hi2";
+import { MdDesignServices } from "react-icons/md";
+import { MdWeb } from "react-icons/md";
 
 export const navbarData = [
   {
@@ -38,11 +40,19 @@ export const navbarData = [
   },
   {
     label: {
-      es: "Proyectos",
-      en: "Projects"
+      es: "Proyectos de Diseño Gráfico",
+      en: "Graphic Design Projects"
     },
-    path: "/projects",
-    icon: <HiViewColumns />
+    path: "/graphic-design-projects",
+    icon: <MdDesignServices />
+  },
+  {
+    label: {
+      es: "Proyectos Web",
+      en: "Web Projects"
+    },
+    path: "/web-projects",
+    icon: <MdWeb />
   },
   {
     label: {
@@ -119,7 +129,6 @@ export default function Navbar() {
                     text-[12px]
                     leading-none
                     font-semibold
-                    capitalize
                     whitespace-nowrap
                   ">
                     {link.label[language]}

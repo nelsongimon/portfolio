@@ -37,6 +37,54 @@ const projectsData: ProjectsData[] = [
     ]
   },
   {
+    name: "Iservicesint",
+    url: "https://iservicesint.com/",
+    image: "/images/iis-ca.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+      SiWoo
+    ]
+  },
+  {
+    name: "Calzado América",
+    url: "https://calzadoamerica.com.ec/",
+    image: "/images/calzado-america.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+      SiWoo
+    ]
+  },
+  {
+    name: "Panlatino",
+    url: "https://panlatino.ca/",
+    image: "/images/panlatino-ca.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+      SiWoo
+    ]
+  },
+  {
+    name: "Ambafiber",
+    url: "https://ambafiber.net/",
+    image: "/images/ambafiber.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+    ]
+  },
+  {
+    name: "Fiber Store",
+    url: "https://fiberstore.net.ec/",
+    image: "/images/fiberstore.jpg",
+    technologies: [
+      FaWordpress,
+      FaElementor,
+    ]
+  },
+  {
     name: "Nomada Vzla Admin",
     url: "https://nomadavzla.store/",
     image: "/images/nomadaadmin.jpg",
@@ -58,16 +106,6 @@ const projectsData: ProjectsData[] = [
       SiTypescript,
       FaReact,
       SiNextdotjs,
-    ]
-  },
-  {
-    name: "Iservicesint",
-    url: "https://iservicesint.com/",
-    image: "/images/iis-ca.jpg",
-    technologies: [
-      FaWordpress,
-      FaElementor,
-      SiWoo
     ]
   },
   {
@@ -119,34 +157,6 @@ const projectsData: ProjectsData[] = [
     ]
   },
   {
-    name: "Panlatino",
-    url: "https://panlatino.ca/",
-    image: "/images/panlatino-ca.jpg",
-    technologies: [
-      FaWordpress,
-      FaElementor,
-      SiWoo
-    ]
-  },
-  {
-    name: "Ambafiber",
-    url: "https://ambafiber.net/",
-    image: "/images/ambafiber.jpg",
-    technologies: [
-      FaWordpress,
-      FaElementor,
-    ]
-  },
-  {
-    name: "Fiber Store",
-    url: "https://fiberstore.net.ec/",
-    image: "/images/fiberstore.jpg",
-    technologies: [
-      FaWordpress,
-      FaElementor,
-    ]
-  },
-  {
     name: "Netflix Clone",
     url: "https://movie-watch-seven.vercel.app/",
     image: "/images/netflix-clone.jpg",
@@ -171,16 +181,6 @@ const projectsData: ProjectsData[] = [
     ]
   },
   {
-    name: "Calzado América",
-    url: "https://calzadoamerica.com.ec/",
-    image: "/images/calzado-america.jpg",
-    technologies: [
-      FaWordpress,
-      FaElementor,
-      SiWoo
-    ]
-  },
-  {
     name: "Agrofomento",
     url: "https://agrofomentoecuador.com/",
     image: "/images/agrofomento.jpg",
@@ -192,7 +192,7 @@ const projectsData: ProjectsData[] = [
   },
 ];
 
-export default function ProjectSlider() {
+export default function WebProjectSlider() {
   const { language } = useLanguage();
   return (
     <Swiper
