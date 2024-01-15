@@ -57,7 +57,7 @@ export default function ProjectsContent() {
               {projectsData[language].description_2}
             </motion.p>
           </div>
-          <motion.div className="w-full lg:max-w-[65%] pb-[90px] lg:pb-0"
+          <motion.div className="w-full lg:max-w-[65%] pb-[120px] lg:pb-0"
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
